@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geldhirn – Immobilien, Energie und Mobilität durchrechnen</title>
+<meta name="description" content="Kostenlose Rechner für Immobilien-Kaufnebenkosten, Finanzierung, laufende Kosten, PV mit Speicher und E-Auto-Wirtschaftlichkeit sowie unverbindliche Anfragen zu Objektanalyse, Strom/Gas und Versicherungen.">
+<link rel="canonical" href="https://geldhirn.de/index.html">
+<meta name="theme-color" content="#0A4DB0">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Geldhirn">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Geldhirn – Immobilien, Energie und Mobilität durchrechnen">
+<meta property="og:description" content="Nicht nur den Kaufpreis sehen, sondern die tatsächlichen Kosten verstehen. Kostenlose Rechner und automatisierte Analysen für Immobilien, Energie, Versicherungen und Mobilität.">
+<meta property="og:locale" content="de_DE">
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Geldhirn",
+  "alternateName": "Geldhirn – Immobilien, Energie und Mobilität durchrechnen",
+  "description": "Kostenlose Rechner und Modellanalysen rund um Immobilienkauf, Finanzierung, Energie und Mobilität.",
+  "inLanguage": "de-DE"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Geldhirn Rechnerplattform",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "description": "Rechner zu Immobilien-Kaufnebenkosten, Finanzierung, Mietrendite, Photovoltaik mit Speicher und Elektroauto-Wirtschaftlichkeit."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Sind die Rechner kostenlos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Alle Rechner auf Geldhirn sind kostenlos und ohne Registrierung nutzbar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sind die Ergebnisse verbindlich?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Alle Ergebnisse sind unverbindliche Modellrechnungen auf Basis Ihrer Eingaben. Sie ersetzen keine individuelle Rechts-, Steuer-, Finanzierungs-, Versicherungs- oder Energieberatung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wird meine Immobilie dadurch begutachtet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Es findet keine technische Begutachtung statt. Für eine belastbare Einschätzung des baulichen Zustands ist ein Sachverständiger erforderlich."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werden meine Daten an Partner weitergegeben?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nur nach Ihrer ausdrücklichen Zustimmung über die entsprechende Einwilligungscheckbox in einem Formular. Ohne diese Zustimmung erfolgt keine Weitergabe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich den Strom- und Gasvergleich kostenlos nutzen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, die Anfrage zur Tarifprüfung im Bereich Verträge & Versicherungen ist für Sie kostenlos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ersetzt der E-Auto- oder PV-Rechner eine individuelle Beratung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Beide liefern Modellrechnungen auf Basis Ihrer Annahmen zu Verbrauch, Preisen und Betriebskosten – keine technische Fachplanung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich die Ergebnisse als PDF speichern?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Über den Button „Ergebnis drucken / als PDF speichern\" öffnet sich der Druckdialog Ihres Browsers, in dem Sie „Als PDF speichern\" wählen können."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#hauptinhalt">Zum Hauptinhalt springen</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner container">
+    <a class="brand" href="index.html#start" aria-label="Geldhirn – Startseite">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4L35 15V35H24V24H16V35H5V15L20 4Z" stroke="var(--color-gold)" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-text"><span class="brand-accent">Geld</span>hirn</span>
+    </a>
+
+    <div class="account-widget">
+      <a href="login.html" class="account-link" id="account-link">
+        <span class="account-avatar" aria-hidden="true">👤</span>
+        <span class="account-label">Anmelden</span>
+      </a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span class="sr-only">Menü öffnen</span>
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M3 7H23M3 13H23M3 19H23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html#start">Start</a></li>
+        <li class="nav-dropdown">
+          <a href="vertraege/index.html" class="nav-dropdown-link">Verträge</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Verträge-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="vertraege/strom-gas.html">Strom &amp; Gas</a></li>
+              <li><a href="vertraege/versicherungs-check.html">Kostenorientierung</a></li>
+              <li><a href="vertraege/aktuelles.html">Aktuelles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="energie/index.html" class="nav-dropdown-link">Energie &amp; Nachhaltigkeit</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Energie &amp; Nachhaltigkeit-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="energie/pv-rechner.html">PV-Rechner mit Speicher</a></li>
+              <li><a href="energie/eauto-rechner.html">E-Auto-Rechner</a></li>
+              <li><a href="energie/waermepumpen-check.html">Wärmepumpen-Check</a></li>
+              <li><a href="energie/sanierungskosten-rechner.html">Sanierungskostenrechner</a></li>
+              <li><a href="energie/autofinanzierung-rechner.html">Auto-Leasing &amp; Finanzierung</a></li>
+              <li><a href="energie/benzinkosten-rechner.html">Benzinkostenrechner</a></li>
+              <li><a href="energie/aktuelles.html">Aktuelles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="immobilien/index.html" class="nav-dropdown-link">Immobilien</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Immobilien-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="immobilien/index.html">Immobilien-Sofortcheck</a></li>
+              <li><a href="immobilien/umzugskosten-rechner.html">Umzugskostenrechner</a></li>
+              <li><a href="immobilien/objekt-vergleich.html">Objekt-Vergleichsrechner</a></li>
+              <li><a href="immobilien/mietrendite-rechner.html">Mietrenditerechner</a></li>
+              <li><a href="immobilien/mieten-oder-kaufen-rechner.html">Mieten-oder-Kaufen-Rechner</a></li>
+              <li><a href="immobilien/hauskosten-rechner.html">Hauskostenrechner</a></li>
+              <li><a href="immobilien/baufinanzierung-rechner.html">Baufinanzierungsrechner</a></li>
+              <li><a href="immobilien/aktuelles.html">Aktuelles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="finanzen/index.html" class="nav-dropdown-link">Finanzen</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Finanzen-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="finanzen/zinseszins-rechner.html">Zinseszinsrechner</a></li>
+              <li><a href="finanzen/brutto-netto-rechner.html">Brutto-Netto-Rechner</a></li>
+              <li><a href="finanzen/entnahmeplan-rechner.html">Entnahmeplanrechner</a></li>
+              <li><a href="finanzen/sparplan-rechner.html">Sparplanrechner</a></li>
+              <li><a href="finanzen/rentenluecken-rechner.html">Rentenlückenrechner</a></li>
+              <li><a href="finanzen/kredit-vergleich-rechner.html">Kreditvergleichsrechner</a></li>
+              <li><a href="finanzen/inflations-rechner.html">Inflationsrechner</a></li>
+              <li><a href="finanzen/umsatzsteuer-rechner.html">Umsatzsteuerrechner</a></li>
+              <li><a href="finanzen/aktuelles.html">Aktuelles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="finanzen/machbarkeitsrechner.html" class="nav-dropdown-link">Machbarkeit</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Machbarkeit-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="finanzen/machbarkeitsrechner.html">Machbarkeitsrechner</a></li>
+              <li><a href="finanzen/gesamtplan.html">Gesamtplanrechner</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="ratgeber/index.html">Ratgeber</a></li>
+        <li><a href="mitgliedschaft.html" class="nav-highlight">Mitgliedschaft</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="hauptinhalt">
+
+<section class="hero" id="start">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Kostenlos · Unabhängig · Für jeden</p>
+      <h1>Geld sparen. Zukunft planen.</h1>
+      <p class="hero-lead">Geldhirn hilft Ihnen, bei Immobilie, Energie, Verträgen und Finanzen den vollen Überblick zu behalten – verständlich erklärt und ohne versteckte Kosten. Alle Rechner sind dauerhaft kostenlos nutzbar.</p>
+      <div class="hero-actions">
+        <a href="#wegweiser" class="btn btn-primary">Jetzt kostenlos starten</a>
+        <a href="#rechner-uebersicht" class="btn btn-secondary">Alle Rechner ansehen</a>
+      </div>
+    </div>
+
+    <div class="hero-card" aria-label="Ihre Vorteile auf einen Blick">
+      <p class="hero-card-badge">Ihre Vorteile auf einen Blick</p>
+      <ul class="hero-benefit-list">
+        <li class="benefit-money">
+          <a href="vertraege/index.html">
+            <span class="hero-benefit-icon" aria-hidden="true">💶</span>
+            <span class="hero-benefit-text"><strong>Geld sparen</strong>Verträge, Energie & Co. auf echte Kosten prüfen</span>
+            <span class="hero-benefit-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="benefit-future">
+          <a href="finanzen/index.html">
+            <span class="hero-benefit-icon" aria-hidden="true">📈</span>
+            <span class="hero-benefit-text"><strong>Zukunft planen</strong>Von der Finanzierung bis zur Altersvorsorge alles im Blick</span>
+            <span class="hero-benefit-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="benefit-free">
+          <a href="#rechner-uebersicht">
+            <span class="hero-benefit-icon" aria-hidden="true">🆓</span>
+            <span class="hero-benefit-text"><strong>Dauerhaft kostenlos</strong>Alle Rechner ohne Kosten und ohne Anmeldung</span>
+            <span class="hero-benefit-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li class="benefit-everyone">
+          <a href="ratgeber/index.html">
+            <span class="hero-benefit-icon" aria-hidden="true">🤝</span>
+            <span class="hero-benefit-text"><strong>Für jeden gemacht</strong>Verständliche Ratgeber, keine Fachsprache nötig</span>
+            <span class="hero-benefit-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="trust-bar">
+    <div class="container trust-bar-inner">
+      <span class="trust-item">Kostenlose Rechner</span>
+      <span class="trust-item">Ohne Registrierung nutzbar</span>
+      <span class="trust-item">Sofortige Ergebnisse</span>
+      <span class="trust-item">Für jeden verständlich</span>
+      <span class="trust-item">Keine Weitergabe ohne Zustimmung</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPARPOTENZIAL ===================== -->
+<section class="savings-banner">
+  <div class="container savings-banner-inner">
+    <p class="savings-banner-label">💡 Wie viel können Sie sparen?</p>
+    <p class="savings-banner-figure">bis zu 50–100&nbsp;€ <span>im Monat</span></p>
+    <p class="savings-banner-note">Beispielhaftes Sparpotenzial je nach persönlicher Situation – etwa durch einen güns­tigeren Strom-/Gasvertrag (laut Marktvergleichen im Schnitt rund 700&nbsp;€ pro Jahr möglich), optimierte Versicherungen oder die passende Finanzierung. Beim Immobilienverkauf oder bei der Miete kommt durch die Maklerprovision oft noch ein deutlich höherer einmaliger Betrag hinzu. Alle Angaben sind unverbindliche Beispielwerte ohne Gewähr – wie viel <em>Sie</em> konkret sparen können, hängt von Ihrer individuellen Situation ab.</p>
+  </div>
+</section>
+
+<!-- ===================== WEGWEISER (Schnellstart) ===================== -->
+<section class="section section-alt" id="wegweiser">
+  <div class="container">
+    <div class="section-head">
+      <h2>Nicht sicher, wo Sie starten sollen?</h2>
+      <p>Beantworten Sie ein bis zwei kurze Fragen – wir zeigen Ihnen den passenden Rechner.</p>
+    </div>
+    <div class="quiz-widget" id="quiz-widget">
+      <p class="quiz-question" id="quiz-question"></p>
+      <div class="quiz-options" id="quiz-options"></div>
+      <button type="button" class="btn btn-outline quiz-back-btn" id="quiz-back-btn" hidden>← Zurück</button>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="ad-slot" aria-label="Werbefläche">Anzeige</div>
+</div>
+
+<!-- ===================== THEMENBEREICHE ===================== -->
+<section class="section" id="themen">
+  <div class="container">
+    <div class="section-head">
+      <h2>Vier Themenbereiche, ein System</h2>
+      <p>Jeder Bereich bündelt die passenden Rechner und Anfragen zu einem Thema – wählen Sie, wo Sie starten möchten.</p>
+    </div>
+
+    <div class="topic-grid">
+      <article class="topic-card">
+        <div class="topic-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M4 11L12 4l8 7M6 10v9h12v-9" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Immobilien</h3>
+        <p>Kaufnebenkosten, Finanzierung, Hauskosten und Mietrendite durchrechnen – bevor Sie unterschreiben.</p>
+        <ul class="topic-card-links">
+          <li>Immobilien-Sofortcheck</li>
+          <li>Mietrendite &amp; Mieten oder Kaufen</li>
+          <li>Baufinanzierung</li>
+        </ul>
+        <a href="immobilien/index.html" class="btn btn-outline">Zum Immobilienbereich</a>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Verträge &amp; Versicherungen</h3>
+        <p>Strom- und Gastarife kostenlos prüfen lassen und Versicherungskosten realistisch einordnen.</p>
+        <ul class="topic-card-links">
+          <li>Strom- &amp; Gasvergleich</li>
+          <li>Versicherungs-Kostencheck</li>
+        </ul>
+        <a href="vertraege/index.html" class="btn btn-outline">Zu Verträgen &amp; Versicherungen</a>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M4 5h6v6H4zM14 5h6v6h-6zM4 13h6v6H4zM14 13h6v6h-6z" stroke="currentColor" stroke-width="1.8"/></svg>
+        </div>
+        <h3>Energie &amp; Nachhaltigkeit</h3>
+        <p>Photovoltaik mit Batteriespeicher durchrechnen und prüfen, ob sich ein Elektroauto für Sie lohnt.</p>
+        <ul class="topic-card-links">
+          <li>PV-Rechner mit Speicher</li>
+          <li>E-Auto-Rechner</li>
+        </ul>
+        <a href="energie/index.html" class="btn btn-outline">Zu Energie &amp; Nachhaltigkeit</a>
+      </article>
+
+      <article class="topic-card">
+        <div class="topic-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M4 19V5M4 19h16M8 16l3-6 3 4 4-8" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Finanzen</h3>
+        <p>Sparpläne mit Zinseszins durchrechnen und prüfen, wie lange ein Kapital bei einer gewünschten Entnahme reicht.</p>
+        <ul class="topic-card-links">
+          <li>Zinseszinsrechner</li>
+          <li>Entnahmeplanrechner</li>
+        </ul>
+        <a href="finanzen/index.html" class="btn btn-outline">Zu Finanzen</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VERTRAUEN / WARUM GELDHIRN ===================== -->
+<section class="section" id="warum-echtkosten">
+  <div class="container">
+    <div class="section-head">
+      <h2>Warum Geldhirn</h2>
+    </div>
+    <div class="value-grid">
+      <div class="value-card">
+        <img class="value-card-icon" src="assets/illustrations/mitgliedschaft.svg" alt="" loading="lazy" width="44" height="44">
+        <h3>Transparent statt provisionsgetrieben</h3>
+        <p>Alle Berechnungsgrundlagen sind offen einsehbar. Es wird kein Ergebnis schöngerechnet, um einen bestimmten Anbieter zu bevorzugen.</p>
+      </div>
+      <div class="value-card">
+        <img class="value-card-icon" src="assets/illustrations/finanzen.svg" alt="" loading="lazy" width="44" height="44">
+        <h3>Basic bleibt dauerhaft kostenlos</h3>
+        <p>Keine versteckte Zeitbombe: Alle Rechner sind ohne Registrierung und ohne Ablaufdatum kostenlos nutzbar.</p>
+      </div>
+      <div class="value-card">
+        <img class="value-card-icon" src="assets/illustrations/vertraege.svg" alt="" loading="lazy" width="44" height="44">
+        <h3>Ergebnisse zum Mitnehmen</h3>
+        <p>Jedes Ergebnis lässt sich drucken oder als PDF speichern – ideal für das Gespräch mit Bank, Berater oder Familie.</p>
+      </div>
+      <div class="value-card">
+        <img class="value-card-icon" src="assets/illustrations/planung.svg" alt="" loading="lazy" width="44" height="44">
+        <h3>Ein System statt Excel-Chaos</h3>
+        <p>Alle Rechner greifen auf dieselben Basisdaten zurück, statt dass Sie Zahlen mehrfach von Hand übertragen müssen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RECHNERÜBERSICHT ===================== -->
+<section class="section section-alt" id="rechner-uebersicht">
+  <div class="container">
+    <div class="section-head">
+      <h2>Alle Rechner im Überblick</h2>
+      <p>Weitere Rechner werden schrittweise ergänzt.</p>
+    </div>
+
+    <div class="card-grid" id="calc-overview-grid"></div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <h2>Häufige Fragen</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3><button type="button" class="faq-question" aria-expanded="false">Sind die Rechner kostenlos?</button></h3>
+        <div class="faq-answer" hidden><p>Ja. Alle Rechner auf Geldhirn sind kostenlos und ohne Registrierung nutzbar.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-question" aria-expanded="false">Sind die Ergebnisse verbindlich?</button></h3>
+        <div class="faq-answer" hidden><p>Nein. Alle Ergebnisse sind unverbindliche Modellrechnungen auf Basis Ihrer Eingaben. Sie ersetzen keine individuelle Rechts-, Steuer-, Finanzierungs-, Versicherungs- oder Energieberatung.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-question" aria-expanded="false">Wird meine Immobilie dadurch begutachtet?</button></h3>
+        <div class="faq-answer" hidden><p>Nein. Es findet keine technische Begutachtung statt. Für eine belastbare Einschätzung des baulichen Zustands ist ein Sachverständiger erforderlich.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-question" aria-expanded="false">Werden meine Daten an Partner weitergegeben?</button></h3>
+        <div class="faq-answer" hidden><p>Nur nach Ihrer ausdrücklichen Zustimmung über die entsprechende Einwilligungscheckbox in einem Formular. Ohne diese Zustimmung erfolgt keine Weitergabe.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-question" aria-expanded="false">Kann ich den Strom- und Gasvergleich kostenlos nutzen?</button></h3>
+        <div class="faq-answer" hidden><p>Ja, die Anfrage zur Tarifprüfung im Bereich Verträge &amp; Versicherungen ist für Sie kostenlos.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-question" aria-expanded="false">Ersetzt der E-Auto- oder PV-Rechner eine individuelle Beratung?</button></h3>
+        <div class="faq-answer" hidden><p>Nein. Beide liefern Modellrechnungen auf Basis Ihrer Annahmen zu Verbrauch, Preisen und Betriebskosten – keine technische Fachplanung.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-question" aria-expanded="false">Kann ich die Ergebnisse als PDF speichern?</button></h3>
+        <div class="faq-answer" hidden><p>Ja. Über den Button „Ergebnis drucken / als PDF speichern" öffnet sich der Druckdialog Ihres Browsers, in dem Sie „Als PDF speichern" wählen können.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-text"><span class="brand-accent">Geld</span>hirn</span>
+      <p>Immobilien, Energie und Mobilität durchrechnen.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Rechtliche Hinweise">
+      <ul>
+        <li><a class="link-button" href="impressum.html">Impressum</a></li>
+        <li><a class="link-button" href="datenschutz.html">Datenschutz</a></li>
+        <li><a class="link-button" href="ueber-uns.html">Über uns</a></li>
+        <li><button type="button" class="link-button" data-legal="Kontakt">Kontakt</button></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <p class="footer-disclaimer">Alle Berechnungen sind unverbindliche Modellrechnungen auf Basis der eingegebenen Daten. Sie ersetzen keine individuelle Rechts-, Steuer-, Finanzierungs-, Versicherungs-, Energie- oder Immobilienberatung und keine technische Begutachtung.</p>
+    <p class="footer-copy">© 2026 Geldhirn · Peter Luft, Schmalkalden</p>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal-overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <h2 id="modal-title">Hinweis</h2>
+    <div class="modal-text" id="modal-text"></div>
+    <button type="button" class="btn btn-primary" id="modal-close">Verstanden</button>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
