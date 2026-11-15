@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machbarkeitsrechner – Geldhirn</title>
+<meta name="description" content="Machbarkeitsrechner: Nettoeinkommen und alle festen Kosten gegenüberstellen, monatlichen Überschuss und Sparpuffer ermitteln. Inklusive Vermögensentwicklung mit ETF-Sparplan.">
+<link rel="canonical" href="https://geldhirn.de/finanzen/machbarkeitsrechner.html">
+<meta name="theme-color" content="#0A4DB0">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Geldhirn">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://geldhirn.de/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Finanzen",
+      "item": "https://geldhirn.de/finanzen/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Machbarkeitsrechner",
+      "item": "https://geldhirn.de/finanzen/machbarkeitsrechner.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Machbarkeitsrechner",
+  "url": "https://geldhirn.de/finanzen/machbarkeitsrechner.html",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "description": "Machbarkeitsrechner: Nettoeinkommen und alle festen Kosten gegenüberstellen, monatlichen Überschuss und Sparpuffer ermitteln. Inklusive Vermögensentwicklung mit ETF-Sparplan.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "inLanguage": "de-DE"
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#hauptinhalt">Zum Hauptinhalt springen</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner container">
+    <a class="brand" href="../index.html#start" aria-label="Geldhirn – Startseite">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4L35 15V35H24V24H16V35H5V15L20 4Z" stroke="var(--color-gold)" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-text"><span class="brand-accent">Geld</span>hirn</span>
+    </a>
+    <div class="account-widget">
+      <a href="../login.html" class="account-link" id="account-link">
+        <span class="account-avatar" aria-hidden="true">👤</span>
+        <span class="account-label">Anmelden</span>
+      </a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span class="sr-only">Menü öffnen</span>
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M3 7H23M3 13H23M3 19H23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="../index.html#start">Start</a></li>
+        <li class="nav-dropdown">
+          <a href="../vertraege/index.html" class="nav-dropdown-link">Verträge</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Verträge-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="../vertraege/strom-gas.html">Strom &amp; Gas</a></li>
+              <li><a href="../vertraege/versicherungs-check.html">Kostenorientierung</a></li>
+              <li><a href="../vertraege/aktuelles.html">Aktuelles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="../energie/index.html" class="nav-dropdown-link">Energie &amp; Nachhaltigkeit</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Energie &amp; Nachhaltigkeit-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="../energie/pv-rechner.html">PV-Rechner mit Speicher</a></li>
+              <li><a href="../energie/eauto-rechner.html">E-Auto-Rechner</a></li>
+              <li><a href="../energie/waermepumpen-check.html">Wärmepumpen-Check</a></li>
+              <li><a href="../energie/sanierungskosten-rechner.html">Sanierungskostenrechner</a></li>
+              <li><a href="../energie/autofinanzierung-rechner.html">Auto-Leasing &amp; Finanzierung</a></li>
+              <li><a href="../energie/benzinkosten-rechner.html">Benzinkostenrechner</a></li>
+              <li><a href="../energie/aktuelles.html">Aktuelles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="../immobilien/index.html" class="nav-dropdown-link">Immobilien</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Immobilien-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="../immobilien/index.html">Immobilien-Sofortcheck</a></li>
+              <li><a href="../immobilien/umzugskosten-rechner.html">Umzugskostenrechner</a></li>
+              <li><a href="../immobilien/objekt-vergleich.html">Objekt-Vergleichsrechner</a></li>
+              <li><a href="../immobilien/mietrendite-rechner.html">Mietrenditerechner</a></li>
+              <li><a href="../immobilien/mieten-oder-kaufen-rechner.html">Mieten-oder-Kaufen-Rechner</a></li>
+              <li><a href="../immobilien/hauskosten-rechner.html">Hauskostenrechner</a></li>
+              <li><a href="../immobilien/baufinanzierung-rechner.html">Baufinanzierungsrechner</a></li>
+              <li><a href="../immobilien/aktuelles.html">Aktuelles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="../finanzen/index.html" class="nav-dropdown-link" aria-current="page">Finanzen</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Finanzen-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="../finanzen/zinseszins-rechner.html">Zinseszinsrechner</a></li>
+              <li><a href="../finanzen/brutto-netto-rechner.html">Brutto-Netto-Rechner</a></li>
+              <li><a href="../finanzen/entnahmeplan-rechner.html">Entnahmeplanrechner</a></li>
+              <li><a href="../finanzen/sparplan-rechner.html">Sparplanrechner</a></li>
+              <li><a href="../finanzen/rentenluecken-rechner.html">Rentenlückenrechner</a></li>
+              <li><a href="../finanzen/kredit-vergleich-rechner.html">Kreditvergleichsrechner</a></li>
+              <li><a href="../finanzen/inflations-rechner.html">Inflationsrechner</a></li>
+              <li><a href="../finanzen/umsatzsteuer-rechner.html">Umsatzsteuerrechner</a></li>
+              <li><a href="../finanzen/aktuelles.html">Aktuelles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="../finanzen/machbarkeitsrechner.html" class="nav-dropdown-link">Machbarkeit</a>
+          <button type="button" class="nav-dropdown-caret" aria-haspopup="true" aria-expanded="false" aria-label="Machbarkeit-Untermenü ein-/ausblenden">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-dropdown-panel">
+            <ul>
+              <li><a href="../finanzen/machbarkeitsrechner.html">Machbarkeitsrechner</a></li>
+              <li><a href="../finanzen/gesamtplan.html">Gesamtplanrechner</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../ratgeber/index.html">Ratgeber</a></li>
+        <li><a href="../mitgliedschaft.html" class="nav-highlight">Mitgliedschaft</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="topic-tabs" aria-label="Finanzen Unterseiten">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">Übersicht</a></li>
+      <li><a href="zinseszins-rechner.html">Zinseszinsrechner</a></li>
+      <li><a href="brutto-netto-rechner.html">Brutto-Netto-Rechner</a></li>
+      <li><a href="entnahmeplan-rechner.html">Entnahmeplanrechner</a></li>
+      <li><a href="sparplan-rechner.html">Sparplanrechner</a></li>
+      <li><a href="rentenluecken-rechner.html">Rentenlückenrechner</a></li>
+      <li><a href="kredit-vergleich-rechner.html">Kreditvergleich</a></li>
+      <li><a href="inflations-rechner.html">Inflationsrechner</a></li>
+      <li><a href="umsatzsteuer-rechner.html">Umsatzsteuerrechner</a></li>
+      <li><a href="machbarkeitsrechner.html" aria-current="page">Machbarkeitsrechner</a></li>
+      <li><a href="aktuelles.html">Aktuelles</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <div class="page-header-flex">
+      <div class="page-header-text">
+      <p class="breadcrumb"><a href="../index.html">Start</a><span>/</span><a href="index.html">Finanzen</a><span>/</span>Machbarkeitsrechner</p>
+      <p class="eyebrow">Kostenlos · inklusive Komplettversion &amp; Vermögensentwicklung</p>
+      <h1>Machbarkeitsrechner</h1>
+      <p>Stellen Sie Ihr monatliches Nettoeinkommen allen festen Kosten gegenüber – Wohnen, Versicherungen, Energie, sonstige feste Ausgaben und Lebenshaltung. Sie erhalten Ihren monatlichen Überschuss und einen empfohlenen Sparpuffer. Mit Pro sehen Sie zusätzlich, wie sich ein Teil des Überschusses über die Jahre in einem ETF-Sparplan entwickeln könnte.</p>
+      </div>
+      <div class="page-header-illustration">
+        <img src="../assets/illustrations/finanzen.svg" alt="" loading="lazy" width="104" height="104">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="hauptinhalt">
+
+<section class="section" id="machbarkeitsrechner">
+  <div class="container">
+    <p class="pro-connect-box"><strong>Alles verbunden mit Geldhirn Pro:</strong> Ihre Eingaben werden einmal gespeichert und automatisch in anderen Rechnern vorgeschlagen – für Ihr Gesamtbild nutzen Sie den <a href="gesamtplan.html">Gesamtplanrechner</a>. Mit Pro können Sie außerdem bald einfach Ihre Rechnungen (Strom, Gas, Öl u.&nbsp;a.) hochladen – Geldhirn erkennt die Kosten automatisch. <a href="../mitgliedschaft.html">Mehr zu Pro →</a></p>
+
+    <form id="m-form" class="calc-form" novalidate>
+      <fieldset class="calc-fieldset">
+        <legend>Nettoeinkommen</legend>
+        <div class="form-grid">
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-netto">Monatliches Haushaltsnettoeinkommen</label><output class="slider-value" id="m-netto-value" for="m-netto"></output></div>
+            <input type="range" id="m-netto" name="m-netto" min="500" max="10000" step="50" value="2800" data-unit="euro">
+          </div>
+        </div>
+        <p class="explain-box" style="margin-top:10px;">Ihr Nettoeinkommen kennen Sie schon? Dann tragen Sie es direkt ein. Sonst hilft der <a href="brutto-netto-rechner.html">Brutto-Netto-Rechner</a> bei der Ermittlung.</p>
+      </fieldset>
+
+      <div class="notice-box" id="m-komplett-locked">
+        <p><strong>Komplettversion:</strong> Statt fünf pauschaler Summen tragen Sie jede Kostenart einzeln ein – inklusive Lebensmittelkosten mit automatischem Vorschlag nach Haushaltsgröße. Bereits erfasste Basisdaten (Nettoeinkommen, Wohnkosten, Energiekosten aus anderen Rechnern) werden automatisch vorausgefüllt – Ihr Gesamtbild auf einen Blick.</p>
+        <button type="button" class="btn btn-outline" id="m-komplett-btn">Komplettversion öffnen</button>
+      </div>
+
+      <fieldset class="calc-fieldset" id="m-basic-fieldset">
+        <legend>Feste und laufende Ausgaben</legend>
+        <div class="form-grid">
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-housing">Miete oder Kreditrate</label><output class="slider-value" id="m-housing-value" for="m-housing"></output></div>
+            <input type="range" id="m-housing" name="m-housing" min="0" max="3000" step="25" value="900" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-insurance">Versicherungen gesamt</label><output class="slider-value" id="m-insurance-value" for="m-insurance"></output></div>
+            <input type="range" id="m-insurance" name="m-insurance" min="0" max="1000" step="10" value="150" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-energy">Energiekosten (Strom, Heizung, ggf. E-Auto)</label><output class="slider-value" id="m-energy-value" for="m-energy"></output></div>
+            <input type="range" id="m-energy" name="m-energy" min="0" max="800" step="10" value="180" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-other">Sonstige feste Ausgaben (Handy, Verträge, Raten)</label><output class="slider-value" id="m-other-value" for="m-other"></output></div>
+            <input type="range" id="m-other" name="m-other" min="0" max="1500" step="10" value="250" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-living">Lebenshaltung (Essen, Freizeit, Kleidung)</label><output class="slider-value" id="m-living-value" for="m-living"></output></div>
+            <input type="range" id="m-living" name="m-living" min="0" max="2000" step="20" value="600" data-unit="euro">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="calc-fieldset" id="m-komplett-fieldset" hidden>
+        <legend>Feste und laufende Ausgaben – Komplettversion</legend>
+        <div class="form-grid">
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-k-housing">Miete oder Kreditrate</label><output class="slider-value" id="m-k-housing-value" for="m-k-housing"></output></div>
+            <input type="range" id="m-k-housing" name="m-k-housing" min="0" max="3000" step="25" value="900" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-k-insurance">Versicherungen gesamt</label><output class="slider-value" id="m-k-insurance-value" for="m-k-insurance"></output></div>
+            <input type="range" id="m-k-insurance" name="m-k-insurance" min="0" max="1000" step="10" value="150" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-k-energy">Energiekosten (Strom, Heizung, ggf. E-Auto)</label><output class="slider-value" id="m-k-energy-value" for="m-k-energy"></output></div>
+            <input type="range" id="m-k-energy" name="m-k-energy" min="0" max="800" step="10" value="180" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-k-persons">Personen im Haushalt</label><output class="slider-value" id="m-k-persons-value" for="m-k-persons"></output></div>
+            <input type="range" id="m-k-persons" name="m-k-persons" min="1" max="8" step="1" value="2" data-unit="personen">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-k-groceries">Lebensmittel &amp; Getränke</label><output class="slider-value" id="m-k-groceries-value" for="m-k-groceries"></output></div>
+            <input type="range" id="m-k-groceries" name="m-k-groceries" min="100" max="2000" step="10" value="430" data-unit="euro" data-touched="false">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-k-mobility">Mobilität (Auto, ÖPNV, Sprit)</label><output class="slider-value" id="m-k-mobility-value" for="m-k-mobility"></output></div>
+            <input type="range" id="m-k-mobility" name="m-k-mobility" min="0" max="1000" step="10" value="200" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-k-leisure">Freizeit, Kleidung, sonstiger Privatverbrauch</label><output class="slider-value" id="m-k-leisure-value" for="m-k-leisure"></output></div>
+            <input type="range" id="m-k-leisure" name="m-k-leisure" min="0" max="1000" step="10" value="200" data-unit="euro">
+          </div>
+          <div class="form-field">
+            <div class="slider-label-row"><label for="m-k-otherfixed">Sonstige feste Kosten (Handy, Abos, Raten)</label><output class="slider-value" id="m-k-otherfixed-value" for="m-k-otherfixed"></output></div>
+            <input type="range" id="m-k-otherfixed" name="m-k-otherfixed" min="0" max="1000" step="10" value="100" data-unit="euro">
+          </div>
+        </div>
+        <p class="explain-box">Der Lebensmittelvorschlag basiert auf Ihrer Haushaltsgröße (Destatis-Durchschnittswerte) – der Regler bleibt frei anpassbar.</p>
+      </fieldset>
+
+      <fieldset class="calc-fieldset">
+        <legend>Energie &amp; Mobilität (optional)</legend>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="m-ecar"><input type="checkbox" id="m-ecar" name="m-ecar"> Ich fahre (oder plane) ein E-Auto</label>
+          </div>
+          <div class="form-field">
+            <label for="m-heatpump"><input type="checkbox" id="m-heatpump" name="m-heatpump"> Ich habe (oder plane) eine Wärmepumpe</label>
+          </div>
+        </div>
+        <p class="explain-box" id="m-ecar-tip" hidden>Für eine genauere Schätzung der Stromkosten eines E-Autos nutzen Sie den <a href="../energie/eauto-rechner.html">E-Auto-Rechner</a> und tragen das Ergebnis oben bei „Energiekosten“ mit ein.</p>
+        <p class="explain-box" id="m-heatpump-tip" hidden>Für eine genauere Schätzung der Heizkosten mit Wärmepumpe nutzen Sie den <a href="../energie/waermepumpen-check.html">Wärmepumpen-Check</a> und tragen das Ergebnis oben bei „Energiekosten“ mit ein.</p>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Machbarkeit berechnen</button>
+        <button type="button" class="btn btn-outline" id="m-reset">Werte zurücksetzen</button>
+      </div>
+
+      <p class="form-error" id="m-error" role="alert" hidden></p>
+    </form>
+
+    <div class="results" id="m-results" aria-live="polite" hidden>
+      <h3>Ihre Modellrechnung</h3>
+
+      <div class="result-grid" id="m-result-grid"></div>
+
+      <p class="disclaimer" id="m-note" hidden></p>
+
+      <div class="subsection">
+        <h3>Vermögensentwicklung mit ETF-Sparplan</h3>
+
+        <div class="notice-box" id="m-wealth-locked">
+          <p>Legen Sie einen Teil Ihres Überschusses monatlich in einem ETF-Sparplan an und sehen Sie, wie sich Ihr Vermögen über 5, 10, 20 Jahre und Ihren gewählten Anlagehorizont entwickeln könnte – inklusive Aufteilung in eingezahltes Kapital und Rendite. Ein Screenshot der reinen Eingabemaske zeigt diese Auswertung nicht.</p>
+        </div>
+
+        <div id="m-wealth-form">
+          <div class="form-grid">
+            <div class="form-field">
+              <div class="slider-label-row"><label for="m-etf-rate">Monatliche Sparrate für den ETF-Sparplan</label><output class="slider-value" id="m-etf-rate-value" for="m-etf-rate"></output></div>
+              <input type="range" id="m-etf-rate" name="m-etf-rate" min="0" max="3000" step="10" value="300" data-unit="euro" data-touched="false">
+            </div>
+            <div class="form-field">
+              <div class="slider-label-row"><label for="m-etf-return">Erwartete Rendite pro Jahr</label><output class="slider-value" id="m-etf-return-value" for="m-etf-return"></output></div>
+              <input type="range" id="m-etf-return" name="m-etf-return" min="0" max="12" step="0.1" value="7" data-unit="percent">
+            </div>
+            <div class="form-field">
+              <div class="slider-label-row"><label for="m-etf-years">Anlagehorizont</label><output class="slider-value" id="m-etf-years-value" for="m-etf-years"></output></div>
+              <input type="range" id="m-etf-years" name="m-etf-years" min="1" max="40" step="1" value="15" data-unit="jahre">
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" id="m-wealth-btn">Vermögensentwicklung berechnen</button>
+          </div>
+        </div>
+
+        <div class="results" id="m-wealth-results" hidden>
+          <div class="result-grid" id="m-wealth-grid"></div>
+        </div>
+      </div>
+
+      <details class="explain-box">
+        <summary>Wie wird gerechnet?</summary>
+        <p>Der monatliche Überschuss ergibt sich aus Nettoeinkommen minus allen eingetragenen festen und laufenden Ausgaben. Als Sparpuffer werden pauschal 3 Monatsausgaben empfohlen – eine gängige Faustregel für finanzielle Rücklagen. Die Vermögensentwicklung nutzt dieselbe Zinseszins-Logik wie der Zinseszinsrechner: monatliche Verzinsung mit nachschüssigen Einzahlungen bei konstanter, angenommener Rendite.</p>
+      </details>
+
+      <p class="disclaimer">Hinweis: Diese Berechnung ist eine unverbindliche Modellrechnung. Sie berücksichtigt keine Steuern auf Kapitalerträge, keine Schwankungen der tatsächlichen Rendite, keine Inflation und keine unregelmäßigen Einnahmen oder Ausgaben. Sie ersetzt keine individuelle Finanz-, Steuer- oder Anlageberatung.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-text"><span class="brand-accent">Geld</span>hirn</span>
+      <p>Immobilien, Energie und Mobilität durchrechnen.</p>
+    </div>
+    <nav class="footer-links" aria-label="Rechtliche Hinweise">
+      <ul>
+        <li><a class="link-button" href="../impressum.html">Impressum</a></li>
+        <li><a class="link-button" href="../datenschutz.html">Datenschutz</a></li>
+        <li><a class="link-button" href="../ueber-uns.html">Über uns</a></li>
+        <li><button type="button" class="link-button" data-legal="Kontakt">Kontakt</button></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <p class="footer-disclaimer">Alle Berechnungen sind unverbindliche Modellrechnungen auf Basis der eingegebenen Daten. Sie ersetzen keine individuelle Rechts-, Steuer-, Finanzierungs-, Versicherungs-, Energie- oder Immobilienberatung und keine technische Begutachtung.</p>
+    <p class="footer-copy">© 2026 Geldhirn · Peter Luft, Schmalkalden</p>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal-overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <h2 id="modal-title">Hinweis</h2>
+    <div class="modal-text" id="modal-text"></div>
+    <button type="button" class="btn btn-primary" id="modal-close">Verstanden</button>
+  </div>
+</div>
+<script src="../config.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>
