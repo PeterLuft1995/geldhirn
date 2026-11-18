@@ -6,7 +6,7 @@
  * Requests werden nie gecacht oder abgefangen.
  */
 
-const CACHE_VERSION = "geldhirn-v1";
+const CACHE_VERSION = "geldhirn-v2";
 const APP_SHELL = [
   "/index.html",
   "/styles.css",

@@ -4,15 +4,15 @@
    ========================================================================== */
 
 :root {
-  /* Farbpalette – zentral änderbar: Hellblau & Silber */
+  /* Farbpalette – zentral änderbar: Blau, Silber & dunkles Orange */
   --color-navy: #0A4DB0;
   --color-navy-dark: #062F73;
   --color-navy-light: #2E7AE0;
   --color-petrol: #64748B;
   --color-petrol-light: #94A3B8;
-  --color-gold: #0A76A0;
-  --color-gold-light: #7DD3FC;
-  --color-gold-deep: #096790;
+  --color-gold: #C2410C;
+  --color-gold-light: #FDBA74;
+  --color-gold-deep: #9A3412;
   --color-red: #E5484D;
   --color-red-bg: #FDEEEE;
   --color-green-bg: #E3F3ED;
